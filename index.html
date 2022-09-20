@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak Buku</title>
+    <link rel="stylesheet" href="./asset/style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="search-book-form">
+            <div class="search-container">
+                <input id="search-input" type="text" placeholder="Search book" />
+                <button id="search-button">Search</button>
+                <button id="reset-button" class="reset-button">Reset Search</button>
+            </div>
+        </div>
+        <div class="add-book-form">
+            <h3>Tambah Buku</h3>
+            <form id="book-form">
+                <div class="fieldset">
+                    <h5>Judul Buku : </h5>
+                    <input type="text" id="input-title"/>
+                </div>
+                <div class="fieldset">
+                    <h5>Penulis : </h5>
+                    <input type="text" id="input-author"/>
+                </div>
+                <div class="fieldset">
+                    <h5>Tahun : </h5>
+                    <input type="number" id="input-year"/>
+                </div>
+                <div class="fieldset without-margin">
+                    <h5>Selesai Dibaca</h5>
+                    <input type="checkbox" id="input-is-read"/> 
+                </div>
+                <button id="submit-buku">Masukkan Buku</button>
+            </form>
+        </div>
+        <div class="wrapper-show-book">
+            <div class="wrapper-read-book">
+                <h3>Buku Sudah Terbaca</h3>
+                <div id="list-read-book" class="list-book">
+                </div>
+            </div>
+            <div class="wrapper-unread-book">
+                <h3>Buku Belum Terbaca</h3>
+                <div id="list-unread-book" class="list-book"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="snackbar"></div>
+
+    <script type="text/javascript" src="./asset/js/constract.js"></script>
+    <script type="text/javascript" src="./asset/js/storage.js"></script>
+    <script type="text/javascript" src="./asset/js/utils.js"></script>
+    <script type="text/javascript" src="./asset/js/index.js"></script>
+    <script type="text/javascript" src="./asset/js/alert.js"></script>
+</body>
+</html>
